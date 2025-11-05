@@ -45,14 +45,14 @@ const Home = () => {
           />
           <h3>Electronics</h3>
         </div>
-        <div className="category" onClick={() => navigate("/category/TvAppliances")}>
+        <div className="category" onClick={() => navigate("/category/Appliances")}>
           <img
             src="https://images.unsplash.com/photo-1590608897129-79da98d15906?auto=format&fit=crop&w=400&q=60"
             alt="appliances"
           />
           <h3>TV & Appliances</h3>
         </div>
-        <div className="category" onClick={() => navigate("/category/BeautyCare")}>
+        <div className="category" onClick={() => navigate("/category/Beauty")}>
           <img
             src="https://images.unsplash.com/photo-1611078489935-0cb964de46d5?auto=format&fit=crop&w=400&q=60"
             alt="beauty"
