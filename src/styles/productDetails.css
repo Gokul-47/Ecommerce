@@ -1,0 +1,121 @@
+.product-details {
+  padding: 40px 5%;
+  font-family: "Poppins", sans-serif;
+  background: #f8fafc;
+}
+
+.details-container {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.image-gallery {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.image-gallery img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.info {
+  flex: 1;
+}
+
+.info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 1.4rem;
+  color: #1e40af;
+  margin: 5px 0;
+}
+
+.rating {
+  color: #f59e0b;
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.add-cart {
+  background: #1e40af;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.add-cart:hover {
+  background: #1d4ed8;
+}
+
+/* Recommendations */
+.recommendations {
+  margin-top: 40px;
+}
+
+.recommendations h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+.recommend-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+}
+
+.rec-card {
+  background: #fff;
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px;
+  transition: 0.3s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.rec-card:hover {
+  transform: translateY(-3px);
+}
+
+.rec-card img {
+  width: 100%;
+  border-radius: 8px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .details-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .info h2 {
+    font-size: 1.3rem;
+  }
+  .price {
+    font-size: 1.1rem;
+  }
+}
