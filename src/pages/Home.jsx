@@ -6,9 +6,9 @@ const Home = () => {
   const navigate = useNavigate(); // ✅ keep it here — inside the function only
 
   const banners = [
-    "https://images.unsplash.com/photo-1503602642458-232111445657?auto=format&fit=crop&w=1200&q=60",
-    "https://images.unsplash.com/photo-1585386959984-a41552231602?auto=format&fit=crop&w=1200&q=60",
-    "https://images.unsplash.com/photo-1606813909357-67d3c71b32e1?auto=format&fit=crop&w=1200&q=60",
+    "banner1.jpg",
+    "banner2.jpg",
+    "banner3.jpg",
   ];
 
   const [index, setIndex] = useState(0);
@@ -33,28 +33,28 @@ const Home = () => {
       <section className="categories">
         <div className="category" onClick={() => navigate("/category/fashion")}>
           <img
-            src="https://images.unsplash.com/photo-1521334884684-d80222895322?auto=format&fit=crop&w=400&q=60"
+            src="fashion.webp"
             alt="fashion"
           />
           <h3>Fashion</h3>
         </div>
         <div className="category" onClick={() => navigate("/category/electronics")}>
           <img
-            src="https://images.unsplash.com/photo-1510557880182-3de2e3f1a89e?auto=format&fit=crop&w=400&q=60"
+            src="electronics.avif"
             alt="electronics"
           />
           <h3>Electronics</h3>
         </div>
         <div className="category" onClick={() => navigate("/category/Appliances")}>
           <img
-            src="https://images.unsplash.com/photo-1590608897129-79da98d15906?auto=format&fit=crop&w=400&q=60"
+            src="tv.webp"
             alt="appliances"
           />
           <h3>TV & Appliances</h3>
         </div>
         <div className="category" onClick={() => navigate("/category/Beauty")}>
           <img
-            src="https://images.unsplash.com/photo-1611078489935-0cb964de46d5?auto=format&fit=crop&w=400&q=60"
+            src="beauty.webp"
             alt="beauty"
           />
           <h3>Beauty</h3>
@@ -67,7 +67,7 @@ const Home = () => {
         <div className="deal-list">
           {[
             {
-              img: "https://images.unsplash.com/photo-1593032465171-cd8a70b7b3f3?auto=format&fit=crop&w=400&q=60",
+              img: "",
               name: "Wireless Earbuds",
               price: "₹899",
             },
@@ -101,10 +101,10 @@ const Home = () => {
         <h2>💥 Trending Offers</h2>
         <div className="offer-list">
           {[
-            "https://images.unsplash.com/photo-1600185365483-26d7a4c3e6d3?auto=format&fit=crop&w=400&q=60",
-            "https://images.unsplash.com/photo-1606813909522-1b56bcb91f30?auto=format&fit=crop&w=400&q=60",
-            "https://images.unsplash.com/photo-1592878904946-b0cf448d8711?auto=format&fit=crop&w=400&q=60",
-            "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=400&q=60",
+            "boat.jpg",
+            "boult.jpg",
+            "noise.jpg",
+            "zebronics.jpg",
           ].map((url, i) => (
             <div key={i} className="offer-card">
               <img src={url} alt="offer" />
