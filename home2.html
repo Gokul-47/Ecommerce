@@ -447,6 +447,20 @@
     </footer>
 
 
+    <!-- Small map modal (opens when address is clicked) -->
+    <div id="mapModal" class="map-modal" aria-hidden="true">
+        <div id="mapBackdrop" class="map-backdrop" tabindex="-1"></div>
+        <div class="map-dialog" role="dialog" aria-modal="true" aria-label="Our location">
+            <div class="map-header">
+                <h4 style="margin:0; font-size:1rem;">Our Location</h4>
+                <button id="mapClose" class="map-close" aria-label="Close map">&times;</button>
+            </div>
+            <div class="map-body">
+                <iframe id="mapFrame" src="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+
     <script src="js/main.js"></script>
 </body>
 </html>
