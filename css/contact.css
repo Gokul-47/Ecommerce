@@ -1,0 +1,27 @@
+/* ... existing code ... */
+
+.footer-location {
+  margin-top: 16px;
+}
+
+.footer-location h4 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.footer-map {
+  width: 100%;
+  max-width: 420px;   /* keeps it small in the footer */
+  height: 180px;      /* small map height */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.footer-map iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* ... existing code ... */
