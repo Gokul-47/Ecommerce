@@ -1321,6 +1321,22 @@ section {
         flex-direction: column;
     }
 
+    /* Prevent the hero image from overlapping the next section on small screens */
+    .hero-img-placeholder {
+        animation: none;
+        transform: none;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Ensure the following sections are painted above the hero image (transforms create stacking contexts) */
+    .products,
+    .features,
+    .newsletter,
+    .about {
+        position: relative;
+        z-index: 1;
+    }
+
 /* Centered map modal for footer address */
 #footerAddress, .map-link { cursor: pointer; text-decoration: underline; }
 .modal-overlay {
@@ -1441,6 +1457,30 @@ section {
     
     .offer-content p {
         font-size: 1rem;
+    }
+
+    /* Ensure the hero image is fully visible on mobile: add extra gap and adjust stacking */
+    .hero-alt {
+        padding-bottom: 4rem; /* extra space so the image doesn't get clipped by the next section */
+        overflow: visible;
+    }
+
+    .hero-image,
+    .hero-img-placeholder {
+        position: relative;
+        z-index: 2; /* keep hero image above following sections */
+        margin-bottom: 1.5rem;
+        animation: none; /* disable float animation on small screens */
+        transform: none;
+    }
+
+    /* Ensure subsequent sections sit below the hero image */
+    .products,
+    .features,
+    .newsletter,
+    .about {
+        position: relative;
+        z-index: 0;
     }
 }
 
